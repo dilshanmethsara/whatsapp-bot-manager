@@ -11,7 +11,7 @@ RUN npm config set registry https://registry.npmmirror.com/ && \
     npm config set fund false
 
 # Install dependencies with optimizations
-RUN npm ci --production --no-optional --ignore-scripts
+RUN npm ci --production --no-optional
 
 # Copy application code
 COPY . .
